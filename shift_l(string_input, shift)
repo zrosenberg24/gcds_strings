@@ -1,0 +1,19 @@
+def shift_l(string_input, shift):
+    '''
+this function is designed to shift all the characters of the string X places to the left. The leftmost
+X characters are deleted and X #'s are inserted on the right to return the string to its orignal length
+:param name: string input, x places
+:type name:string
+:type state void
+:returns the result as a string
+:raises: general try and except
+'''
+    # Left Shift characters in String
+    part = string_input[shift:]
+    count = 0
+    # loop to add a "#" for each deleted letter
+    while (count < shift):
+        part = part + "#"
+        count = count + 1
+    # return result
+    return part
