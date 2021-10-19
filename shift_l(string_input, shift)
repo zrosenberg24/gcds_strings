@@ -1,7 +1,7 @@
 def shift_l(string_input, shift):
     '''
 this function is designed to shift all the characters of the string X places to the left. The leftmost
-X characters are deleted and X #'s are inserted on the right to return the string to its orignal length
+X characters are deleted and X #'s are inserted on the right to return the string to its original length
 :param name: string input, x places
 :type name:string
 :type state void
