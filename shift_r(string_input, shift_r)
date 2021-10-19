@@ -1,0 +1,20 @@
+def shift_r(string_input, shift_r):
+    ''' 
+this function is designed to shift all the characters of the string X places to the right. The rightmost 
+X characters are deleted and X #'s are inserted on the left to return the string to its orignal length 
+:param name: string input, x places 
+:type name:string 
+:type state void 
+:returns the result as a string 
+:raises: general try and except 
+'''
+    # Right Shift characters in String
+    the_length = len(string_input)
+    part = string_input[:the_length-shift_r]
+    count = 0
+    # loop to add a "#" for each deleted letter
+    while (count < shift_r):
+        part = "#" + part
+        count = count + 1
+    # return result
+    return part
